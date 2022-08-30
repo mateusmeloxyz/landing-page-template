@@ -60,9 +60,19 @@ html {
 
 body {
     font-family: "Roboto", Arial, sans-serif;
+    background: #1F2937;
+}
+
+header,
+.main-container,
+.information,
+footer {
     max-width: 1000px;
     margin: auto;
-    background: #1F2937;
+}
+
+.information-container {
+    background: #E5E7EB;
 }
 
 header {
@@ -95,7 +105,7 @@ header ul a{
 }
 
 .main-container {
-    margin: 64px 0;
+    margin: 64px auto;
     display: flex;
     padding: 16px;
     gap: 32px;
