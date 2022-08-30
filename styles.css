@@ -66,12 +66,17 @@ body {
 header,
 .main-container,
 .information,
+.quote-container
 footer {
     max-width: 1000px;
     margin: auto;
 }
 
 .information-container {
+    background: white;
+}
+
+.quote-section {
     background: #E5E7EB;
 }
 
@@ -151,13 +156,20 @@ header ul a{
 }
 
 .information {
-    background-color: #E5E7EB;
     text-align: center;
+    padding: 64px 0 128px;
+}
+
+.information h1 {
+    margin-bottom: 64px;
 }
 
 .information .card-list {
+    max-width: 800px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
+    gap: 32px;
 }
 
 .information .card-list .card {
@@ -165,11 +177,40 @@ header ul a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
+    color: #555;
 }
 
 .information .card-list .img {
     width: 164px;
     height: 164px;
     border: 4px #3882F6 solid;
-    border-radius: 8px; 
+    border-radius: 16px; 
+}
+
+.quote-section {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    max-width: 764px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container .quote {
+    font-weight: 100;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-container .quote-author {
+    align-self: flex-end;
+    font-weight: bold;
 }
