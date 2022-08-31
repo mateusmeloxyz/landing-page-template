@@ -66,13 +66,15 @@ body {
 header,
 .main-container,
 .information,
-.quote-container
+.quote-container,
+.signup-container,
 footer {
     max-width: 1000px;
     margin: auto;
 }
 
-.information-container {
+.information-container,
+.signup-section {
     background: white;
 }
 
@@ -134,15 +136,17 @@ header ul a{
     font-size: 18px;
 }
 
-.main-container button {
+.main-container button,
+.signup-section button {
     margin: 8px 0;
     padding: 8px 32px;
     border: none;
     background: #3882F6;
-    color: #E5E7EB;
+    color: #F9FaF8;
     font: inherit;
     font-weight: bold;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .main-container .img {
@@ -213,4 +217,34 @@ header ul a{
 .quote-container .quote-author {
     align-self: flex-end;
     font-weight: bold;
+}
+
+.signup-section {
+    padding: 84px 0;
+
+}
+
+.signup-section .signup-container {
+    background: #3882F6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    padding: 48px 0;
+}
+
+.signup-section .signup-text {
+    color: #F9FAF8
+}
+
+.signup-section button {
+    border: 2px solid white;
+}
+
+footer {
+    height: 108px;
+    color: #F9FaF8;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
