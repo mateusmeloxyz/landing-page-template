@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="./styles.css">
     <title>Landing Page Template</title>
 </head>
 <body>
-    <header>
+    <header class="navbar">
         <div class="logo">Header Logo</div>
 
-            <ul>
+            <ul class="nav-links">
                 <li><a href="">header link one</a></li>
                 <li><a href="">header link two</a></li>
                 <li><a href="">header link three</a></li>
             </ul>
+           
+            <img src="https://img.icons8.com/ultraviolet/40/000000/menu--v1.png" class="menu-btn"/>
+          
     </header>
 
     <div class="main-container">
         <div class="hero-text">
-           <h1>This website is awesome</h1> 
-           <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+           <h1 class="heading">This website is awesome</h1> 
+           <p class="info">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+          
+          <div class="wrapper">
            <button>Sign up</button>
+        </div>
 
         </div>
-        <div class="img">this is a placeholder for an image</div>
+        <div class="wrapper">
+        <div class="img placeholder-img">this is a placeholder for an image</div>
+       </div>
     </div>
 
     <div class="information-container">
@@ -68,16 +77,24 @@
     <div class="signup-section">
         <div class="signup-container">
             <div class="signup-text">
-                <h2>Call to action! It's time!</h2>
-                <p>Sign up for our product by clicking that button right over there!</p>
+                <h2 class="sign-up">Call to action! It's time!</h2>
+                <p class="info">Sign up for our product by clicking that button right over there!</p>
             </div>
-            <button>Sign up</button>
+            <div class="wrapper">
+            <button class="signup-button">Sign up</button>
+           </div>
         </div>
     </div>
 
     <footer>
         <div>Copyright © The Odin Project 2021</div>
     </footer>
-
+<script>
+    const menubtn= document.querySelector(".menu-btn")
+    const navlinks= document.querySelector(".nav-links");
+    menubtn.addEventListener('click',()=>{
+        navlinks.classList.toggle("mobile-menu")
+    })
+</script>
 </body>
 </html>
