@@ -161,7 +161,7 @@ header ul a{
 
 .information {
     text-align: center;
-    padding: 64px 0 128px;
+    padding: 64px 24px 128px;
 }
 
 .information h1 {
@@ -193,10 +193,11 @@ header ul a{
 }
 
 .quote-section {
-    height: 450px;
+    min-height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px 16px;
 }
 
 .quote-container {
@@ -220,7 +221,7 @@ header ul a{
 }
 
 .signup-section {
-    padding: 84px 0;
+    padding: 84px 24px;
 
 }
 
@@ -229,7 +230,8 @@ header ul a{
     border-radius: 8px;
     display: flex;
     justify-content: space-around;
-    padding: 48px 0;
+    padding: 48px 16px;
+    gap: 8px;
 }
 
 .signup-section .signup-text {
