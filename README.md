@@ -6,4 +6,4 @@ Project made to practice HTML & CSS fundamentals from [https://www.theodinprojec
 
 ## Live demo
 
-[https://mateusgomes01.github.io/landing-page-template/](https://mateusgomes01.github.io/landing-page-template/)
+[https://mateusmeloxyz.github.io/landing-page-template/](https://mateusmeloxyz.github.io/landing-page-template/)
